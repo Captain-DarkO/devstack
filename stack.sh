@@ -739,7 +739,9 @@ if [[ "$OFFLINE" != "True" ]]; then
 fi
 
 # Install subunit for the subunit output stream
-pip_install -U os-testr
+# postponed lib install due to errors
+#pip_install -U os-testr
+
 
 TRACK_DEPENDS=${TRACK_DEPENDS:-False}
 
